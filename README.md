@@ -1,41 +1,49 @@
-# Customer Churn Prediction 
+# ECommerce Customer Churn Prediction 
 
-## Introduction
-Customer retention is a critical challenge for e-commerce businesses. Losing customers (*churn*) not only decreases revenue but also raises marketing expenses for acquiring new users. Since **customer retention cost (CRC)** is typically lower than **customer acquisition cost (CAC)**, implementing an effective churn mitigation strategy is essential for long-term business growth.
+## 📌 Context  
+A company operating in the **e-commerce** industry is facing intense competition in retaining its customers. In this sector, **customer churn**—when customers stop purchasing from the platform—directly impacts revenue and increases the cost of acquiring new customers.
 
-## Problem Statement
-The goal of this project is to **predict customer churn** so that:
-1. **The company can proactively retain high-value customers** before they leave the platform.
-2. **Revenue can be optimized** by reducing churn and improving customer engagement.
+The company has collected various customer-related data, including purchase behavior, transaction frequency, payment methods, and demographic information. This data can be leveraged to gain deeper insights into churn patterns.
 
-## Machine Learning Objective
-This project aims to develop a **predictive model** to:
-- **Minimize revenue loss** by identifying at-risk customers early.
-- **Enhance retention efforts** through data-driven insights.
+---
 
-Using data science, we can:
-- **Predict customers likely to churn** and take preventive measures.
-- **Identify key factors influencing churn**, helping refine retention strategies.
+## Problem Statement  
+Currently, the company does not have a predictive system to identify customers who are at risk of churning. Without such a system, the marketing or retention teams must target all customers equally, leading to:
 
-A data-driven approach allows businesses to **optimize retention strategies** and **mitigate the financial impact of churn**.
+- 💸 **Wasted retention costs**
+- ⚠️ **Ineffective interventions**
 
-## Analytical Approach
-This project involves:
-1. **Exploratory Data Analysis (EDA)** to identify churn patterns.
-2. **Building supervised learning models (classification)** to:
-   - Predict the probability of customer churn.
-   - Identify the most influential churn factors using feature importance analysis.
+Without a data-driven strategy, retention efforts are often inefficient and yield suboptimal results, as they fail to focus on customers who are actually at risk.
 
-## Business Value Proposition
-Implementing a churn prediction model provides tangible benefits, including:
+---
 
-### 1. Increased Revenue & Cost Efficiency
-- **Reduces revenue loss** by proactively retaining customers.
-- **Decreases marketing costs** by focusing on retention rather than acquisition.
+## Goals  
+To address the challenges above, the company aims to develop a **machine learning-based predictive model** that can:
 
-### 2. Improved Retention Strategies
-- **Helps businesses develop targeted interventions** for high-risk customers.
-- **Enhances customer loyalty**, ensuring a stable revenue stream.
+1. **Identify customers who are likely to churn**, so that retention efforts can be more focused.
+2. **Reveal the key factors contributing to churn**, helping the team design more effective retention strategies.
+
+This approach will enable the company to:
+
+- Reduce unnecessary spending on retention
+- Improve customer loyalty
+- Maintain stable revenue growth
+
+---
+
+## Analytic Approach  
+The steps taken in this project are as follows:
+
+1. **Exploratory Data Analysis (EDA)**  
+   Analyze historical customer data to identify patterns and distinguish between loyal customers and churners.
+
+2. **Model Building**  
+   Develop a **classification model** using machine learning to predict the likelihood of customer churn. The model will be evaluated primarily using the **F1 Score**, which balances **False Positives (FP)** and **False Negatives (FN)**.
+
+3. **Business Interpretation**  
+   Visualize the results in an **interactive dashboard** to help business teams interpret key insights and make data-driven decisions.
+
+---
 
 ## Performance Metrics
 For churn prediction, choosing the right evaluation metric is crucial. The **confusion matrix** offers detailed insights into model performance by breaking down actual vs. predicted outcomes.
@@ -59,12 +67,35 @@ For churn prediction, choosing the right evaluation metric is crucial. The **con
 
 ### Why Use F1 Score?
 Since churn prediction requires both **high recall (capturing actual churners)** and **high precision (avoiding false churn predictions)**, the **F1 Score** is the best metric. It balances recall and precision, ensuring accurate detection of churners while minimizing retention costs. This results in a **cost-effective and efficient churn reduction strategy**.
+ 
+ ---
+ 
+## Expected Outcome  
+By leveraging this predictive model, the company will be able to:
 
-## Conclusion
-By leveraging machine learning for churn prediction, businesses can:
-- **Make informed, data-driven decisions** to reduce customer attrition.
-- **Implement targeted retention strategies** to maximize customer lifetime value.
-- **Optimize costs and improve profitability**, leading to sustainable business growth.
+- 🎯 Focus retention strategies on high-risk customers
+- 🧠 Understand what drives churn in their customer base
+- 💰 Reduce overall retention costs by avoiding unnecessary outreach to loyal customers
+- 📉 Minimize the revenue loss caused by unexpected churn
+
+---
+
+## Project Structure  
+- `notebooks/` : Jupyter notebooks for EDA and model building  
+- `data/` : Raw and processed datasets (clean_data) 
+- `models/` : Trained model files  
+- `dashboard/` : Interactive dashboard (tableau)  
+- `report/` : Final report and performance evaluation  
+
+---
+
+## Tech Stack  
+- Python (Pandas, Scikit-learn, Matplotlib, Seaborn)
+- Tableau for dashboard
+- Jupyter Notebook for experimentation and EDA
+
+---
+
 ___
 ![Screenshot 2025-02-26 230530](https://github.com/user-attachments/assets/9e814ab7-0f69-4bda-aa27-e229372ddbc3)
 
