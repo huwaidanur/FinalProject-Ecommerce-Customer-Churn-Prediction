@@ -1,6 +1,6 @@
 # ECommerce Customer Churn Prediction 
 
-## 📌 Context  
+## Context  
 A company operating in the **e-commerce** industry is facing intense competition in retaining its customers. In this sector, **customer churn**—when customers stop purchasing from the platform—directly impacts revenue and increases the cost of acquiring new customers.
 
 The company has collected various customer-related data, including purchase behavior, transaction frequency, payment methods, and demographic information. This data can be leveraged to gain deeper insights into churn patterns.
@@ -10,8 +10,8 @@ The company has collected various customer-related data, including purchase beha
 ## Problem Statement  
 Currently, the company does not have a predictive system to identify customers who are at risk of churning. Without such a system, the marketing or retention teams must target all customers equally, leading to:
 
-- 💸 **Wasted retention costs**
-- ⚠️ **Ineffective interventions**
+- **Wasted retention costs**
+- **Ineffective interventions**
 
 Without a data-driven strategy, retention efforts are often inefficient and yield suboptimal results, as they fail to focus on customers who are actually at risk.
 
@@ -82,8 +82,7 @@ By leveraging this predictive model, the company will be able to:
 
 ## Project Structure  
 - `notebooks/` : Jupyter notebooks for EDA and model building  
-- `data/` : Raw and processed datasets (clean_data) 
-- `models/` : Trained model files  
+- `data/` : Raw and processed datasets (clean_data)  
 - `dashboard/` : Interactive dashboard (tableau)  
 - `report/` : Final report and performance evaluation  
 
