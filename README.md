@@ -45,7 +45,7 @@ The steps taken in this project are as follows:
 
 ---
 
-## Performance Metrics
+## Metric Evaluation
 For churn prediction, choosing the right evaluation metric is crucial. The **confusion matrix** offers detailed insights into model performance by breaking down actual vs. predicted outcomes.
 
 ### Key Considerations
